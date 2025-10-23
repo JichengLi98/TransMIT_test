@@ -5,7 +5,7 @@ model_name=TimesNet
 python -u run.py \
   --task_name imputation \
   --is_training 1 \
-  --root_path ./dataset/FTD/ \
+  --root_path ./dataset/ \
   --data_path FTD.csv \
   --model_id FTD_mask_0.1 \
   --mask_rate 0.1 \
@@ -32,7 +32,7 @@ python -u run.py \
 python -u run.py \
   --task_name imputation \
   --is_training 1 \
-  --root_path ./dataset/FTD/ \
+  --root_path ./dataset/ \
   --data_path FTD.csv \
   --model_id FTD_mask_0.2 \
   --mask_rate 0.2 \
@@ -59,7 +59,7 @@ python -u run.py \
 python -u run.py \
   --task_name imputation \
   --is_training 1 \
-  --root_path ./dataset/FTD/ \
+  --root_path ./dataset/ \
   --data_path FTD.csv \
   --model_id FTD_mask_0.3 \
   --mask_rate 0.3 \
@@ -86,7 +86,7 @@ python -u run.py \
 python -u run.py \
   --task_name imputation \
   --is_training 1 \
-  --root_path ./dataset/FTD/ \
+  --root_path ./dataset/ \
   --data_path FTD.csv \
   --model_id FTD_mask_0.4 \
   --mask_rate 0.4 \
@@ -113,7 +113,7 @@ python -u run.py \
   python -u run.py \
   --task_name imputation \
   --is_training 1 \
-  --root_path ./dataset/FTD/ \
+  --root_path ./dataset/ \
   --data_path FTD.csv \
   --model_id FTD_mask_0.5 \
   --mask_rate 0.5 \
