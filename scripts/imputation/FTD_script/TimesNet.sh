@@ -10,7 +10,7 @@ python -u run.py \
   --model_id FTD_mask_0.1 \
   --mask_rate 0.1 \
   --model $model_name \
-  --data FTD \
+  --data custom \
   --features M \
   --seq_len 16 \
   --label_len 0 \
@@ -37,7 +37,7 @@ python -u run.py \
   --model_id FTD_mask_0.2 \
   --mask_rate 0.2 \
   --model $model_name \
-  --data FTD \
+  --data custom \
   --features M \
   --seq_len 16 \
   --label_len 0 \
@@ -64,7 +64,7 @@ python -u run.py \
   --model_id FTD_mask_0.3 \
   --mask_rate 0.3 \
   --model $model_name \
-  --data FTD \
+  --data custom \
   --features M \
   --seq_len 16 \
   --label_len 0 \
@@ -91,7 +91,7 @@ python -u run.py \
   --model_id FTD_mask_0.4 \
   --mask_rate 0.4 \
   --model $model_name \
-  --data FTD \
+  --data custom \
   --features M \
   --seq_len 16 \
   --label_len 0 \
@@ -118,7 +118,7 @@ python -u run.py \
   --model_id FTD_mask_0.5 \
   --mask_rate 0.5 \
   --model $model_name \
-  --data FTD \
+  --data custom \
   --features M \
   --seq_len 16 \
   --label_len 0 \
