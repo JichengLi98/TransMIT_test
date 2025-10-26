@@ -18,9 +18,9 @@ python -u run.py \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
   --d_ff 128 \
@@ -47,9 +47,9 @@ python -u run.py \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
   --batch_size 16 \
   --d_model 128 \
   --d_ff 128 \
@@ -76,9 +76,9 @@ python -u run.py \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
   --d_ff 128 \
@@ -105,9 +105,9 @@ python -u run.py \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
   --d_ff 128 \
@@ -134,9 +134,9 @@ python -u run.py \
   --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 7 \
-  --dec_in 7 \
-  --c_out 7 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
   --d_ff 128 \
