@@ -1,0 +1,140 @@
+export CUDA_VISIBLE_DEVICES=0
+
+model_name=Transformer
+
+python -u run.py \
+  --task_name imputation \
+  --is_training 1 \
+  --root_path ./dataset/ \
+  --data_path FTD.csv \
+  --model_id FTD_mask_0.1 \
+  --mask_rate 0.1 \
+  --model $model_name \
+  --data custom \
+  --features M \
+  --seq_len 16 \
+  --label_len 0 \
+  --pred_len 0 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
+  --batch_size 100 \
+  --d_model 128 \
+  --d_ff 128 \
+  --des 'Exp' \
+  --itr 1 \
+  --top_k 5 \
+  --learning_rate 0.0005
+
+python -u run.py \
+  --task_name imputation \
+  --is_training 1 \
+  --root_path ./dataset/ \
+  --data_path FTD.csv \
+  --model_id FTD_mask_0.1 \
+  --mask_rate 0.1 \
+  --model $model_name \
+  --data custom \
+  --features M \
+  --seq_len 16 \
+  --label_len 0 \
+  --pred_len 0 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
+  --batch_size 100 \
+  --d_model 128 \
+  --d_ff 128 \
+  --des 'Exp' \
+  --itr 1 \
+  --top_k 5 \
+  --learning_rate 0.0005
+
+python -u run.py \
+  --task_name imputation \
+  --is_training 1 \
+  --root_path ./dataset/ \
+  --data_path FTD.csv \
+  --model_id FTD_mask_0.1 \
+  --mask_rate 0.1 \
+  --model $model_name \
+  --data custom \
+  --features M \
+  --seq_len 16 \
+  --label_len 0 \
+  --pred_len 0 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
+  --batch_size 100 \
+  --d_model 128 \
+  --d_ff 128 \
+  --des 'Exp' \
+  --itr 1 \
+  --top_k 5 \
+  --learning_rate 0.0005
+
+python -u run.py \
+  --task_name imputation \
+  --is_training 1 \
+  --root_path ./dataset/ \
+  --data_path FTD.csv \
+  --model_id FTD_mask_0.1 \
+  --mask_rate 0.1 \
+  --model $model_name \
+  --data custom \
+  --features M \
+  --seq_len 16 \
+  --label_len 0 \
+  --pred_len 0 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
+  --batch_size 100 \
+  --d_model 128 \
+  --d_ff 128 \
+  --des 'Exp' \
+  --itr 1 \
+  --top_k 5 \
+  --learning_rate 0.0005
+
+python -u run.py \
+  --task_name imputation \
+  --is_training 1 \
+  --root_path ./dataset/ \
+  --data_path FTD.csv \
+  --model_id FTD_mask_0.1 \
+  --mask_rate 0.1 \
+  --model $model_name \
+  --data custom \
+  --features M \
+  --seq_len 16 \
+  --label_len 0 \
+  --pred_len 0 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 89 \
+  --dec_in 89 \
+  --c_out 89 \
+  --batch_size 100 \
+  --d_model 128 \
+  --d_ff 128 \
+  --des 'Exp' \
+  --itr 1 \
+  --top_k 5 \
+  --learning_rate 0.0005
+  
+  
