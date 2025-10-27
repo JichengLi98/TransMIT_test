@@ -27,7 +27,7 @@ python -u run.py \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
-  --learning_rate 0.0001 \
+  --learning_rate 0.0005 \
   --p_hidden_dims 256 256 \
   --p_hidden_layers 2
 
@@ -56,7 +56,7 @@ python -u run.py \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
-  --learning_rate 0.0001 \
+  --learning_rate 0.0005 \
   --p_hidden_dims 256 256 \
   --p_hidden_layers 2
 
@@ -85,7 +85,7 @@ python -u run.py \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
-  --learning_rate 0.0001 \
+  --learning_rate 0.0005 \
   --p_hidden_dims 256 256 \
   --p_hidden_layers 2
 
