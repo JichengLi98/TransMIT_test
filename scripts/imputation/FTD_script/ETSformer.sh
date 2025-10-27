@@ -16,7 +16,7 @@ python -u run.py \
   --label_len 0 \
   --pred_len 0 \
   --e_layers 2 \
-  --d_layers 1 \
+  --d_layers 2 \
   --factor 3 \
   --enc_in 89 \
   --dec_in 89 \
@@ -43,7 +43,7 @@ python -u run.py \
   --label_len 0 \
   --pred_len 0 \
   --e_layers 2 \
-  --d_layers 1 \
+  --d_layers 2 \
   --factor 3 \
   --enc_in 89 \
   --dec_in 89 \
@@ -70,7 +70,7 @@ python -u run.py \
   --label_len 0 \
   --pred_len 0 \
   --e_layers 2 \
-  --d_layers 1 \
+  --d_layers 2 \
   --factor 3 \
   --enc_in 89 \
   --dec_in 89 \
@@ -97,7 +97,7 @@ python -u run.py \
   --label_len 0 \
   --pred_len 0 \
   --e_layers 2 \
-  --d_layers 1 \
+  --d_layers 2 \
   --factor 3 \
   --enc_in 89 \
   --dec_in 89 \
@@ -124,7 +124,7 @@ python -u run.py \
   --label_len 0 \
   --pred_len 0 \
   --e_layers 2 \
-  --d_layers 1 \
+  --d_layers 2 \
   --factor 3 \
   --enc_in 89 \
   --dec_in 89 \
