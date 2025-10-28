@@ -48,22 +48,24 @@ class Model(nn.Module):
         )
         # Decoder
         if self.task_name == 'imputation':
-            self.projection = nn.Linear(configs.d_model + configs.enc_in, configs.c_out, bias=True)
-        self.projection2 = nn.Linear(configs.d_model, configs.seq_len, bias=True)
+            self.projection1 = nn.Linear(configs.seq_len, configs.d_model, bias=True)
+            self.projection2 = nn.Linear(configs.d_model, configs.seq_len, bias=True)
+            self.projection3 = nn.Linear(configs.d_model + configs.enc_in, configs.c_out, bias=True)
 
     def imputation(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask):
         # Embedding
         enc_out1 = self.enc_embedding(x_enc, x_mark_enc)
-        enc_out2 = self.enc_embedding_inverted(x_enc, x_mark_enc)
-      
         enc_out1, attns1 = self.encoder(enc_out1, attn_mask=None)
+        
+        enc_out2 = x_enc.permute(0, 2, 1)
+        enc_out2 = self.projection1(enc_out2)
         enc_out2, attns2 = self.encoder_inverted(enc_out2, attn_mask=None)
         enc_out2 = self.projection2(enc_out2)
         enc_out2 = enc_out2.permute(0, 2, 1)
 
         enc_out = torch.cat([enc_out1, enc_out2], -1)
 
-        dec_out = self.projection(enc_out)
+        dec_out = self.projection3(enc_out)
         return dec_out
 
 
