@@ -60,7 +60,7 @@ class Model(nn.Module):
         enc_out2 = nn.Linear(configs.d_model, configs.seq_len, bias=True)(enc_out2)
         enc_out2 = enc_out2.permute(0, 2, 1)
 
-        enc_out = torch.cat([enc_out1, enc_out2], 1)
+        enc_out = torch.cat([enc_out1, enc_out2], -1)
 
         dec_out = self.projection(enc_out)
         return dec_out
