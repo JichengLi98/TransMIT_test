@@ -14,7 +14,7 @@ class Model(nn.Module):
         # Embedding 
         self.enc_embedding = DataEmbedding(configs.enc_in, configs.d_model, configs.embed, configs.freq,
                                            configs.dropout)
-        self.enc_embedding_inverted = DataEmbedding_inverted(configs.enc_in, configs.d_model, configs.embed, configs.freq,
+        self.enc_embedding_inverted = DataEmbedding_inverted(configs.seq_len, configs.d_model, configs.embed, configs.freq,
                                            configs.dropout)
 
         # Encoder    
@@ -48,7 +48,7 @@ class Model(nn.Module):
         )
         # Decoder
         if self.task_name == 'imputation':
-            self.projection = nn.Linear(2*configs.d_model, configs.c_out, bias=True)
+            self.projection = nn.Linear(configs.d_model + configs.enc_in, configs.c_out, bias=True)
 
     def imputation(self, x_enc, x_mark_enc, x_dec, x_mark_dec, mask):
         # Embedding
