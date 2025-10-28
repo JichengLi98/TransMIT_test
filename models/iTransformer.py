@@ -73,14 +73,13 @@ class Model(nn.Module):
         #stdev = torch.sqrt(torch.var(x_enc, dim=1, keepdim=True, unbiased=False) + 1e-5)
         #x_enc /= stdev
 
-        #_, L, N = x_enc.shape
+        _, L, N = x_enc.shape
 
         # Embedding
         enc_out = self.enc_embedding(x_enc, x_mark_enc)
         enc_out, attns = self.encoder(enc_out, attn_mask=None)
 
-        #dec_out = self.projection(enc_out).permute(0, 2, 1)[:, :, :N]
-        dec_out = self.projection(enc_out).permute(0, 2, 1)
+        dec_out = self.projection(enc_out).permute(0, 2, 1)[:, :, :N]
         # De-Normalization from Non-stationary Transformer
         #dec_out = dec_out * (stdev[:, 0, :].unsqueeze(1).repeat(1, L, 1))
         #dec_out = dec_out + (means[:, 0, :].unsqueeze(1).repeat(1, L, 1))
