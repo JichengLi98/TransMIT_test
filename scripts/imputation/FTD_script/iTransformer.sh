@@ -5,6 +5,7 @@ model_name=iTransformer
 fix_seed=${1:-2025}  # default = 2025 if no argument provided
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -32,6 +33,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -59,6 +61,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -86,6 +89,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -113,6 +117,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
