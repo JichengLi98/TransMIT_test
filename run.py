@@ -20,12 +20,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='TimesNet')
     
     parser.add_argument('--fix_seed', type=int, default=2025)
-    fix_seed = args.fix_seed
-    random.seed(fix_seed)
-    torch.manual_seed(fix_seed)
-    np.random.seed(fix_seed)
-    print(f"Running with seed = {fix_seed}")
-    
     # basic config
     parser.add_argument('--task_name', type=str, required=True, default='long_term_forecast',
                         help='task name, options:[long_term_forecast, short_term_forecast, imputation, classification, anomaly_detection]')
@@ -148,6 +142,14 @@ if __name__ == '__main__':
     parser.add_argument('--patch_len', type=int, default=16, help='patch length')
 
     args = parser.parse_args()
+    
+    #
+    fix_seed = args.fix_seed
+    random.seed(fix_seed)
+    torch.manual_seed(fix_seed)
+    np.random.seed(fix_seed)
+    print(f"Running with seed = {fix_seed}")
+    
     if torch.cuda.is_available() and args.use_gpu:
         args.device = torch.device('cuda:{}'.format(args.gpu))
         print('Using GPU')
@@ -173,13 +175,7 @@ if __name__ == '__main__':
         Exp = Exp_Short_Term_Forecast
     elif args.task_name == 'imputation':
         Exp = Exp_Imputation
-    elif args.task_name == 'anomaly_detection':
-        Exp = Exp_Anomaly_Detection
-    elif args.task_name == 'classification':
-        Exp = Exp_Classification
-    else:
-        Exp = Exp_Long_Term_Forecast
-
+    
     if args.is_training:
         for ii in range(args.itr):
             # setting record of experiments
