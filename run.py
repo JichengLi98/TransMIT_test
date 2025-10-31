@@ -12,13 +12,20 @@ import random
 import numpy as np
 
 if __name__ == '__main__':
-    fix_seed = 2021
+    # fix_seed = args.fix_seed
+    # random.seed(fix_seed)
+    # torch.manual_seed(fix_seed)
+    # np.random.seed(fix_seed)
+
+    parser = argparse.ArgumentParser(description='TimesNet')
+    
+    parser.add_argument('--fix_seed', type=int, default=2025)
+    fix_seed = args.fix_seed
     random.seed(fix_seed)
     torch.manual_seed(fix_seed)
     np.random.seed(fix_seed)
-
-    parser = argparse.ArgumentParser(description='TimesNet')
-
+    print(f"Running with seed = {fix_seed}")
+    
     # basic config
     parser.add_argument('--task_name', type=str, required=True, default='long_term_forecast',
                         help='task name, options:[long_term_forecast, short_term_forecast, imputation, classification, anomaly_detection]')
