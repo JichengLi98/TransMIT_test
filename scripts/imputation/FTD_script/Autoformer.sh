@@ -2,7 +2,10 @@ export CUDA_VISIBLE_DEVICES=0
 
 model_name=Autoformer
 
+fix_seed=${1:-2025}  # default = 2025 if no argument provided
+
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -15,7 +18,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -23,13 +26,14 @@ python -u run.py \
   --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
-  --d_ff 128 \
+  --d_ff None \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -42,7 +46,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -50,13 +54,14 @@ python -u run.py \
   --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
-  --d_ff 128 \
+  --d_ff None \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -69,7 +74,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -77,13 +82,14 @@ python -u run.py \
   --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
-  --d_ff 128 \
+  --d_ff None \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -96,7 +102,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -104,13 +110,14 @@ python -u run.py \
   --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
-  --d_ff 128 \
+  --d_ff None \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -123,7 +130,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -131,7 +138,7 @@ python -u run.py \
   --c_out 89 \
   --batch_size 100 \
   --d_model 128 \
-  --d_ff 128 \
+  --d_ff None \
   --des 'Exp' \
   --itr 1 \
   --top_k 5 \
