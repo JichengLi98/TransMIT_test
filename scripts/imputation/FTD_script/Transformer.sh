@@ -3,6 +3,7 @@ export CUDA_VISIBLE_DEVICES=0
 model_name=Transformer
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -15,7 +16,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -30,6 +31,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -42,7 +44,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -57,6 +59,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -69,7 +72,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -84,6 +87,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -96,7 +100,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
@@ -111,6 +115,7 @@ python -u run.py \
   --learning_rate 0.0005
 
 python -u run.py \
+  --fix_seed $fix_seed \
   --task_name imputation \
   --is_training 1 \
   --root_path ./dataset/ \
@@ -123,7 +128,7 @@ python -u run.py \
   --seq_len 16 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 2 \
+  --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 89 \
