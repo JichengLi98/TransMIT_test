@@ -185,7 +185,7 @@ if __name__ == '__main__':
             # setting record of experiments
             exp = Exp(args)  # set experiments
             setting = '{}_{}_{}_{}_ft{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_dl{}_df{}_expand{}_dc{}_fc{}_eb{}_dt{}_{}_{}'.format(
-                arg.fix_seed,
+                args.fix_seed,
                 args.task_name,
                 args.model_id,
                 args.model,
