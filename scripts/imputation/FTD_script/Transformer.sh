@@ -2,6 +2,8 @@ export CUDA_VISIBLE_DEVICES=0
 
 model_name=Transformer
 
+fix_seed=${1:-2025}  # default = 2025 if no argument provided
+
 python -u run.py \
   --fix_seed $fix_seed \
   --task_name imputation \
