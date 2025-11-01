@@ -21,7 +21,7 @@ python -u run.py \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 47 \ #89
+  --enc_in 47 \ 
   --dec_in 47 \
   --c_out 47 \
   --batch_size 100 \
@@ -49,7 +49,7 @@ python -u run.py \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 47 \ #89
+  --enc_in 47 \ 
   --dec_in 47 \
   --c_out 47 \
   --batch_size 100 \
@@ -77,7 +77,7 @@ python -u run.py \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 47 \ #89
+  --enc_in 47 \ 
   --dec_in 47 \
   --c_out 47 \
   --batch_size 100 \
@@ -105,7 +105,7 @@ python -u run.py \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 47 \ #89
+  --enc_in 47 \ 
   --dec_in 47 \
   --c_out 47 \
   --batch_size 100 \
@@ -133,7 +133,7 @@ python -u run.py \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
-  --enc_in 47 \ #89
+  --enc_in 47 \ 
   --dec_in 47 \
   --c_out 47 \
   --batch_size 100 \
