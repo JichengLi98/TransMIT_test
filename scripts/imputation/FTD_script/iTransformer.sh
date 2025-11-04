@@ -24,7 +24,7 @@ python -u run.py \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -52,7 +52,7 @@ python -u run.py \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -80,7 +80,7 @@ python -u run.py \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -108,7 +108,7 @@ python -u run.py \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -136,7 +136,7 @@ python -u run.py \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
