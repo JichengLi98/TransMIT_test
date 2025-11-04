@@ -15,16 +15,16 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 16 \
+  --seq_len 6 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 4 \
+  --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -43,16 +43,16 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 16 \
+  --seq_len 6 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 4 \
+  --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -71,16 +71,16 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 16 \
+  --seq_len 6 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 4 \
+  --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -99,16 +99,16 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 16 \
+  --seq_len 6 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 4 \
+  --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
@@ -127,16 +127,16 @@ python -u run.py \
   --model $model_name \
   --data custom \
   --features M \
-  --seq_len 16 \
+  --seq_len 6 \
   --label_len 0 \
   --pred_len 0 \
-  --e_layers 4 \
+  --e_layers 2 \
   --d_layers 1 \
   --factor 3 \
   --enc_in 29 \
   --dec_in 29 \
   --c_out 29 \
-  --batch_size 100 \
+  --batch_size 32 \
   --d_model 128 \
   --d_ff 128 \
   --des 'Exp' \
