@@ -9,7 +9,7 @@ class Model(nn.Module):
     Paper link: https://openreview.net/pdf?id=0EXmFzUn5I
     """
 
-    def __init__(self, configs, window_size=[4,4], inner_size=5):
+    def __init__(self, configs, window_size=[2,2], inner_size=5):
         """
         window_size: list, the downsample window size in pyramidal attention.
         inner_size: int, the size of neighbour attention
